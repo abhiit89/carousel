@@ -10,13 +10,13 @@
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img ng-src="/app/assets/images/{{carousel[0]}}" alt="First Slide">
+                    <img ng-src="/app/assets/images/{{carousel[0]}}" data-image="imageName" data-name="carousel[0]" data-selected="imageSelected" click-image>
                 </div>
                 <div class="item">
-                    <img ng-src="/app/assets/images/{{carousel[1]}}" alt="Second Slide">
+                    <img ng-src="/app/assets/images/{{carousel[1]}}" data-name="carousel[1]" data-selected="imageSelected" click-image>
                 </div>
                 <div class="item">
-                    <img ng-src="/app/assets/images/{{carousel[2]}}" alt="Third Slide">
+                    <img ng-src="/app/assets/images/{{carousel[2]}}" data-name="carousel[2]" data-selected="imageSelected" click-image>
                 </div>
             </div>
             <!-- Carousel controls -->
@@ -51,6 +51,6 @@
                 </label>
             </div>
         </div>
-        <button class="btn btn-success pull-right">Next</button>
+        <button class="btn btn-success pull-right" ng-if="imageSelected" ng-click="sendData()">Next</button>
     </blockquote>
 </div>

@@ -3,7 +3,7 @@
  */
 (function () {
     "use strict";
-    angular.module("digiapt",[
+    angular.module("digiapt", [
         'ui.router'
     ])
 })();

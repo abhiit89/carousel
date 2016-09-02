@@ -1,5 +1,14 @@
-<div>
-    <h1>Question is {{result.question}}</h1>
-    <h1>Option is {{result.option}}</h1>
-    <img ng-src="{{result.image}}"/>
+<div class="container">
+    <blockquote>
+        <div class="row">
+            Question is {{result.question}}
+        </div>
+        <div class="row">
+            <h1>Option is {{result.option}}</h1>
+        </div>
+        <div class="row">
+            Clicked Image was:
+            <img src="/app/assets/images/{{result.image}}" class="img-circle">
+        </div>
+    </blockquote>
 </div>
