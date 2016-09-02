@@ -8,6 +8,6 @@
 
     }])
         .controller("resultController",["$scope", "$stateParams",function ($scope,$stateParams) {
-        alert(JSON.stringify($stateParams.resultData));
+            $scope.result = $stateParams.resultData;
     }]);
 })();
