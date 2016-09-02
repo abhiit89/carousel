@@ -14,7 +14,7 @@
             },
             link: function ($scope, element, attrs) {
                 element.on("click", function () {
-                    element.addClass("check-box");
+                    element.parent().addClass(" bottom-right glyphicon glyphicon-ok");
                     $scope.selected = true;
                     $scope.image = $scope.name;
                 })
