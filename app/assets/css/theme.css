@@ -1,0 +1,8 @@
+.wrapper {
+    clear: both;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+}
